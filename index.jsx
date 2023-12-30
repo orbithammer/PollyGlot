@@ -4,7 +4,6 @@ import OpenAI from "openai"
 
 function handlePhraseChange(event) {
     setPhrase(event.target.value)
-    console.log(phrase)
 }
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
     const [phrase, setPhrase] = React.useState("")
     const [response, setResponse] = React.useState("")
     const handlePhraseChange = event => {
-        // console.log(event)
         setPhrase(event.target.value)
     }
     
@@ -38,11 +36,9 @@ function App() {
                 messages,
                 temperature: 0
             })
-            console.log(response)
             setResponse(response.choices[0].message.content)
             setIsTranslating(false)
         } catch(err){
-            console.log("error: ", err)
             setResponse(err)
             setIsTranslating(false)
         }

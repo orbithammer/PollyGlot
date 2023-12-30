@@ -4,8 +4,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     max-width: 24.375rem;
+    margin: 0 auto;
 }
 
 header {
