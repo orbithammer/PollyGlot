@@ -51,7 +51,7 @@ function App() {
         <>
             <header>
                 <div className="logo-wrapper">
-                    <img src="./public/assets/parrot.png" alt="cartoon anthropomorphized parrot" />
+                    <img src="/public/assets/parrot.png" alt="cartoon anthropomorphized parrot" />
                     <div className="title-wrapper">
                         <h1 className="title">PollyGlot</h1>
                         <p className="subtitle">Perfect Translation Every Time</p>
