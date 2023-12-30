@@ -13,7 +13,7 @@ body {
 
 .app-wrapper {
     width: 100vw;
-    max-width: 50rem;
+    max-width: 80rem;
 }
 
 header {
@@ -28,8 +28,8 @@ header {
 }
 
 header img {
-    width: 5.93025rem;
-    height: 5.30019rem;
+    width: 8rem;
+    height: 7rem;
     margin-right: 0.94rem;
 }
 
@@ -41,13 +41,13 @@ header img {
 .title {
     font-family: 'Big Shoulders Display', sans-serif;
     color: #32CD32;
-    font-size: 2.71369rem;
+    font-size: 6rem;
     margin: 0 0 0.25rem;
 }
 
 .subtitle {
     color: #fff;
-    font-size: 0.76325rem;
+    font-size: 2rem;
 }
 
 main {
@@ -70,7 +70,7 @@ main {
 
 main h2 {
     color: #035A9D;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     line-height: 150%;
 }
 
@@ -84,7 +84,7 @@ main textarea {
     padding: 0.75rem;
     color: #333;
     font-family: Poppins;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     line-height: 150%;
     resize: none;
 }
@@ -95,18 +95,19 @@ main textarea {
     background-color: #EFF0F4;
     border-radius: 0.5rem;
     margin: 1.38rem 0;
-    padding: 0.75rem;    
+    padding: 0.75rem;
+    font-size: 2.5rem;
 }
 
 main button {
     min-width: 100%;
-    height: 3.125rem;
+    height: 6rem;
     border-radius: 0.375rem;
     background: #035A9D;
     border: none;
     color: #FFF;
     font-family: Poppins;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 150%;
 }
