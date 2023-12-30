@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import OpenAI from "openai"
+import imageUrl from "/public/assets/parrot.png"
 
 function handlePhraseChange(event) {
     setPhrase(event.target.value)
@@ -44,10 +45,10 @@ function App() {
         }
     }
     return (
-        <>
+        <div className="app-wrapper">
             <header>
                 <div className="logo-wrapper">
-                    <img src="/public/assets/parrot.png" alt="cartoon anthropomorphized parrot" />
+                    <img src={imageUrl} alt="cartoon anthropomorphized parrot" />
                     <div className="title-wrapper">
                         <h1 className="title">PollyGlot</h1>
                         <p className="subtitle">Perfect Translation Every Time</p>
@@ -63,7 +64,7 @@ function App() {
                     <button onClick={()=>fetchTranslation(phrase)}>{isTranslating ? "Translating..." : "Translate"}</button>
                 </div>
             </main>
-        </>
+        </div>
     )
 }
 
