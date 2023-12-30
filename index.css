@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 24.375rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13.3125rem;
+    background-image: url("./assets/worldmap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header img {
+    width: 5.93025rem;
+    height: 5.30019rem;
+    margin-right: 0.94rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: #32CD32;
+    font-size: 2.71369rem;
+    margin: 0 0 0.25rem;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 0.76325rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.88rem 0.9rem 2rem;
+    background-color: #fff;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.9375rem;
+    border: 4px solid #252F42;
+    padding: 1.5rem;
+    min-width: 100%;
+}
+
+main h2 {
+    color: #035A9D;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+main textarea {
+    border-radius: 0.5rem;
+    background: #EFF0F4;
+    border: none;
+    min-width: 100%;
+    height: 7.375rem;
+    margin: 1.44rem 0;
+    padding: 0.75rem;
+    color: #333;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    line-height: 150%;
+    resize: none;
+}
+
+.text-output {
+    min-width: 100%;
+    min-height: 7.375rem;
+    background-color: #EFF0F4;
+    border-radius: 0.5rem;
+    margin: 1.38rem 0;
+    padding: 0.75rem;    
+}
+
+main button {
+    min-width: 100%;
+    height: 3.125rem;
+    border-radius: 0.375rem;
+    background: #035A9D;
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+}
