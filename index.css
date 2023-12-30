@@ -13,7 +13,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 13.3125rem;
-    background-image: url("./assets/worldmap.png");
+    background-image: url("./public/assets/worldmap.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
