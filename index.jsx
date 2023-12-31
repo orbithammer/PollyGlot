@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"
 import OpenAI from "openai"
 import imageUrl from "/assets/parrot.png"
 
-
+require('dotenv').config()
 
 function handlePhraseChange(event) {
     setPhrase(event.target.value)
@@ -30,10 +30,10 @@ function App() {
                     content: phrase
                 }
             ]
-            // const openai = new OpenAI({
-            //     apiKey: process.env.OPENAI_API_KEY
-            // })
-            const openai = new OpenAI()
+            const openai = new OpenAI({
+                apikey: process.env.OPENAI_API_KEY
+            })
+
             const response = await openai.chat.completions.create({
                 model: "gpt-3.5-turbo",
                 messages,
