@@ -25,8 +25,7 @@ function App() {
                 }
             ]
             const openai = new OpenAI({
-                apiKey: import.meta.env,
-                dangerouslyAllowBrowser: true
+                apiKey: import.meta.env.VITE_OPENAI_API_KEY
             })
 
             const response = await openai.chat.completions.create({
