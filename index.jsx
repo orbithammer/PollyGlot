@@ -31,8 +31,7 @@ function App() {
                 }
             ]
             const openai = new OpenAI({
-                api: process.env.OPENAI_API_KEY,
-                dangerouslyAllowBrowser: true
+                api: process.env.OPENAI_API_KEY
             })
             const response = await openai.chat.completions.create({
                 model: "gpt-3.5-turbo",
