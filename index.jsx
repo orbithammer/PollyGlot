@@ -31,7 +31,7 @@ function App() {
                 }
             ]
             const openai = new OpenAI({
-                // api: process.env.OPENAI_API_KEY,
+                api: process.env.OPENAI_API_KEY,
                 dangerouslyAllowBrowser: true
             })
             const response = await openai.chat.completions.create({
@@ -42,7 +42,7 @@ function App() {
             setResponse(response.choices[0].message.content)
             setIsTranslating(false)
         } catch(err){
-            setResponse(err)
+            console.log("Error: ", err)
             setIsTranslating(false)
         }
     }
