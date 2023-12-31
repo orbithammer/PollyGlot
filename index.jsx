@@ -3,9 +3,7 @@ import ReactDOM from "react-dom/client"
 import OpenAI from "openai"
 import imageUrl from "/public/assets/parrot.png"
 
-const openai = new OpenAI({
-    api: process.env.OPENAI_API_KEY
-})
+
 
 function handlePhraseChange(event) {
     setPhrase(event.target.value)
@@ -32,11 +30,14 @@ function App() {
                     content: phrase
                 }
             ]
-            
+            const openai = new OpenAI({
+                api: process.env.OPENAI_API_KEY,
+                dangerouslyAllowBrowser: true
+            })
             const response = await openai.chat.completions.create({
                 model: "gpt-3.5-turbo",
                 messages,
-                temperature: 0
+                temperature: 1
             })
             setResponse(response.choices[0].message.content)
             setIsTranslating(false)

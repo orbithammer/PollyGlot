@@ -9,6 +9,7 @@ body {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .app-wrapper {
