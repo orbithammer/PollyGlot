@@ -5,10 +5,6 @@ import imageUrl from "/assets/parrot.png"
 
 require('dotenv').config()
 
-function handlePhraseChange(event) {
-    setPhrase(event.target.value)
-}
-
 function App() {
     const [isTranslating, setIsTranslating] = React.useState(false)
     const [phrase, setPhrase] = React.useState("")
