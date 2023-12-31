@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import OpenAI from "openai"
-import imageUrl from "/public/assets/parrot.png"
+import imageUrl from "/assets/parrot.png"
 
 
 

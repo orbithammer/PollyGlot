@@ -9,7 +9,6 @@ body {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    height: 100vh;
 }
 
 .app-wrapper {
@@ -22,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 13.3125rem;
-    background-image: url("/public/assets/worldmap.png");
+    background-image: url("/assets/worldmap.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,10 +62,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     border-radius: 0.9375rem;
     border: 4px solid #252F42;
     padding: 1.5rem;
     min-width: 100%;
+    height: 100vh;
 }
 
 main h2 {
@@ -80,7 +81,7 @@ main textarea {
     background: #EFF0F4;
     border: none;
     min-width: 100%;
-    height: 7.375rem;
+    height: 15rem;
     margin: 1.44rem 0;
     padding: 0.75rem;
     color: #333;
@@ -92,12 +93,13 @@ main textarea {
 
 .text-output {
     min-width: 100%;
-    min-height: 7.375rem;
+    min-height: 15rem;
     background-color: #EFF0F4;
     border-radius: 0.5rem;
     margin: 1.38rem 0;
     padding: 0.75rem;
     font-size: 2.5rem;
+    overflow: scroll
 }
 
 main button {
