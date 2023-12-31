@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client"
 import OpenAI from "openai"
 import imageUrl from "/assets/parrot.png"
 
-require('dotenv').config()
-
 function App() {
     const [isTranslating, setIsTranslating] = React.useState(false)
     const [phrase, setPhrase] = React.useState("")
@@ -27,7 +25,7 @@ function App() {
                 }
             ]
             const openai = new OpenAI({
-                apikey: process.env.OPENAI_API_KEY
+                apiKey: import.meta.env
             })
 
             const response = await openai.chat.completions.create({
